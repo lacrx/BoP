@@ -8,8 +8,8 @@ Personal Linux desktop theming, anchored to the [gerane "Birds of Paradise" VS C
 |---|---|---|
 | GNOME Shell theme | ✅ shipped | [`gnome-shell/`](./gnome-shell) |
 | Firefox theme (.xpi) | ✅ shipped | [`firefox/`](./firefox) |
+| GNOME Terminal palette | ✅ shipped | [`terminal/`](./terminal) |
 | GTK 3/4 theme + libadwaita overrides | planned | `gtk/` |
-| GNOME Terminal palette | planned | `terminal/` |
 | GRUB theme | planned | `grub/` |
 
 ## Palette (source of truth)
