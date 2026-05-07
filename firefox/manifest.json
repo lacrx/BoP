@@ -1,0 +1,68 @@
+{
+  "manifest_version": 2,
+  "name": "Birds of Paradise (BoP)",
+  "version": "1.1.0",
+  "description": "Faithful Firefox port of the Birds of Paradise TextMate / VS Code theme by Michael Sheets / Gerane. Warm-brown body, gold entity accent, BoP magenta selection.",
+  "author": "Thomas Lacroix",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "birds-of-paradise@thomas.lacroix.e"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame":                          "#2E211F",
+      "frame_inactive":                 "#2E211F",
+
+      "tab_background_text":            "#E6E1C4",
+      "tab_selected":                   "#372725",
+      "tab_text":                       "#E6E1C4",
+      "tab_line":                       "#EFAC32",
+      "tab_loading":                    "#EF5D32",
+      "tab_background_separator":       "#1F1413",
+
+      "toolbar":                        "#372725",
+      "toolbar_text":                   "#E6E1C4",
+      "bookmark_text":                  "#E6E1C4",
+      "toolbar_top_separator":          "#1F1413",
+      "toolbar_bottom_separator":       "#1F1413",
+      "toolbar_vertical_separator":     "rgba(91, 65, 61, 0.6)",
+
+      "toolbar_field":                  "#2E211F",
+      "toolbar_field_text":             "#E6E1C4",
+      "toolbar_field_border":           "#1F1413",
+      "toolbar_field_focus":            "#1F1413",
+      "toolbar_field_text_focus":       "#E6E1C4",
+      "toolbar_field_border_focus":     "#EFAC32",
+      "toolbar_field_highlight":        "#A40042",
+      "toolbar_field_highlight_text":   "#FFF9D5",
+      "toolbar_field_separator":        "rgba(91, 65, 61, 0.6)",
+
+      "popup":                          "#2E211F",
+      "popup_text":                     "#E6E1C4",
+      "popup_border":                   "#1F1413",
+      "popup_highlight":                "#EFAC32",
+      "popup_highlight_text":           "#372725",
+
+      "sidebar":                        "#2E211F",
+      "sidebar_text":                   "#E6E1C4",
+      "sidebar_border":                 "#1F1413",
+      "sidebar_highlight":              "#EFAC32",
+      "sidebar_highlight_text":         "#372725",
+
+      "ntp_background":                 "#372725",
+      "ntp_text":                       "#E6E1C4",
+      "ntp_card_background":            "#2E211F",
+
+      "button_background_hover":        "rgba(239, 172, 50, 0.16)",
+      "button_background_active":       "rgba(239, 172, 50, 0.30)",
+
+      "icons":                          "#E6E1C4",
+      "icons_attention":                "#EFAC32"
+    },
+    "properties": {
+      "color_scheme":                   "dark",
+      "content_color_scheme":           "system"
+    }
+  }
+}
