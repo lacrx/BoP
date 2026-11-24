@@ -1,0 +1,50 @@
+# Birds of Paradise for herdr — a [theme.custom] block.
+#
+# herdr (https://herdr.dev) is a terminal workspace manager. It draws its own chrome — tab
+# bar, sidebar, pane borders, status, popups — in truecolor, so these values are what you
+# see around the shell rather than inside it. Pair it with a terminal profile from
+# `terminal/` or `terminal-app/`, which colour what the shell itself prints.
+#
+# Slot names are catppuccin's, because that is the vocabulary herdr's config uses. The
+# mapping follows BoP's own semantics, noted per line as the tmTheme role.
+#
+# THREE VALUES ARE DERIVED, not from the tmTheme. BoP is a syntax theme and has no mid-tone
+# lift between its background and its text, which a UI with depth needs:
+#
+#   #5B413D  muted brown — already BoP's ANSI bright black in `terminal/`
+#   #493431  the midpoint of #372725 and #5B413D, for the shallower of the two lifts
+#   #A8977B  the midpoint of #E6E1C4 and #6B4E32, a muted label that stays readable
+#
+# #6B4E32, the comment colour, is deliberately dim against #372725 — right for a comment
+# inside a file, too dim for a sidebar label, which is why #A8977B exists.
+
+[theme]
+name = "catppuccin"      # the base; every slot that matters is overridden below
+auto_switch = false      # BoP is a dark theme and has no light counterpart
+
+[theme.custom]
+
+# surfaces
+panel_bg      = "#372725"  # bg
+sidebar_bg    = "#2E211F"  # bg, one step darker — chrome
+surface_dim   = "#1F1413"  # deepest borders / panel
+surface0      = "#493431"  # derived lift
+surface1      = "#5B413D"  # derived muted brown
+active_row_bg = "#5B413D"  # derived muted brown, the focused row
+selection_bg  = "#A40042"  # iconic magenta, the signature colour
+
+# text
+text     = "#E6E1C4"  # fg
+subtext0 = "#A8977B"  # derived muted label
+overlay1 = "#6B4E32"  # comment / muted
+overlay0 = "#5B413D"  # derived muted brown, the dimmest readable mark
+
+# accents
+accent = "#EFAC32"  # accent gold (entity)
+peach  = "#EF5D32"  # orange-red (keyword)
+yellow = "#D9D762"  # yellow (string)
+green  = "#7DAF9C"  # sage (variable / success)
+red    = "#CC4232"  # invalid / error
+teal   = "#86B4BB"  # teal (xml tag)
+blue   = "#6C99BB"  # blue (constant)
+mauve  = "#BE73FD"  # purple (regexp)

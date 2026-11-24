@@ -9,6 +9,8 @@ Personal Linux desktop theming, anchored to the [gerane "Birds of Paradise" VS C
 | GNOME Shell theme | ✅ shipped | [`gnome-shell/`](./gnome-shell) |
 | Firefox theme (.xpi) | ✅ shipped | [`firefox/`](./firefox) |
 | GNOME Terminal palette | ✅ shipped | [`terminal/`](./terminal) |
+| macOS Terminal.app profile | ✅ shipped | [`terminal-app/`](./terminal-app) |
+| herdr workspace theme | ✅ shipped | [`herdr/`](./herdr) |
 | GTK 3/4 theme + libadwaita overrides | planned | `gtk/` |
 | GRUB theme | planned | `grub/` |
 
@@ -42,3 +44,6 @@ From `gerane.theme-birdsofparadise` VS Code extension `Birds_of_Paradise.tmTheme
 
 - Ubuntu 24.04, GNOME 46, Wayland session
 - ThinkPad
+
+The two terminal components reach past that: `terminal-app/` is macOS (verified on 26.4) and
+`herdr/` is wherever herdr runs.
