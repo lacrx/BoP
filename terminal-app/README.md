@@ -53,8 +53,9 @@ Identical to [`terminal/README.md`](../terminal/README.md), slot for slot.
 | Key | Hex | Role |
 |---|---|---|
 | `BackgroundColor` | `#372725` | bg |
-| `TextColor` / `TextBoldColor` | `#E6E1C4` | fg / bold |
-| `CursorColor` | `#DDDDDD` | cursor body |
+| `TextColor` | `#E6E1C4` | fg |
+| `TextBoldColor` | `#EFB732` | custom: warm gold |
+| `CursorColor` | `#A40042` | custom: iconic magenta, same as selection |
 | `SelectionColor` | `#A40042` | iconic magenta selection |
 
 Terminal.app has no selection *foreground* setting; it picks one itself. The profile sets
@@ -70,16 +71,16 @@ than tinted toward the background.
 | 2 | Green | `#7DAF9C` | sage / variable |
 | 3 | Yellow | `#EFAC32` | accent gold |
 | 4 | Blue | `#6C99BB` | constant |
-| 5 | Magenta | `#BE73FD` | regexp special |
+| 5 | Magenta | `#FF9928` | custom: amber |
 | 6 | Cyan | `#86B4BB` | xml tag |
 | 7 | White | `#E6E1C4` | foreground cream |
 | 8 | Bright Black | `#5B413D` | muted brown |
 | 9 | Bright Red | `#EF5D32` | keyword orange-red |
-| 10 | Bright Green | `#9CCEBA` | sage light |
-| 11 | Bright Yellow | `#D9D762` | string |
-| 12 | Bright Blue | `#AFC4DB` | preprocessor |
-| 13 | Bright Magenta | `#C699BB` | sass values |
-| 14 | Bright Cyan | `#A6D4DC` | teal light |
+| 10 | Bright Green | `#19E7BB` | custom: aqua |
+| 11 | Bright Yellow | `#3FD72C` | custom: green |
+| 12 | Bright Blue | `#0000FF` | custom: pure blue |
+| 13 | Bright Magenta | `#FF9930` | custom: amber |
+| 14 | Bright Cyan | `#C2294D` | custom: crimson |
 | 15 | Bright White | `#F8F8F8` | bright |
 
 ## Known limit

@@ -1,16 +1,16 @@
 [/]
 allow-bold=true
 background-color='#373727272525'
-bold-color='#E6E6E1E1C4C4'
-bold-color-same-as-fg=true
-cursor-background-color='#DDDDDDDDDDDD'
+bold-color='#EFEFB7B73232'
+bold-color-same-as-fg=false
+cursor-background-color='#A4A400004242'
 cursor-colors-set=true
 cursor-foreground-color='#373727272525'
 foreground-color='#E6E6E1E1C4C4'
 highlight-background-color='#A4A400004242'
 highlight-colors-set=true
 highlight-foreground-color='#FFFFF9F9D5D5'
-palette=['#1F1F14141313', '#CCCC42423232', '#7D7DAFAF9C9C', '#EFEFACAC3232', '#6C6C9999BBBB', '#BEBE7373FDFD', '#8686B4B4BBBB', '#E6E6E1E1C4C4', '#5B5B41413D3D', '#EFEF5D5D3232', '#9C9CCECEBABA', '#D9D9D7D76262', '#AFAFC4C4DBDB', '#C6C69999BBBB', '#A6A6D4D4DCDC', '#F8F8F8F8F8F8']
+palette=['#1F1F14141313', '#CCCC42423232', '#7D7DAFAF9C9C', '#EFEFACAC3232', '#6C6C9999BBBB', '#FFFF99992828', '#8686B4B4BBBB', '#E6E6E1E1C4C4', '#5B5B41413D3D', '#EFEF5D5D3232', '#1919E7E7BBBB', '#3F3FD7D72C2C', '#00000000FFFF', '#FFFF99993030', '#C2C229294D4D', '#F8F8F8F8F8F8']
 use-theme-background=false
 use-theme-colors=false
 use-theme-transparency=false

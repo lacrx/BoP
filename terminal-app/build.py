@@ -29,13 +29,14 @@ OUT = Path(__file__).resolve().parent / "birds-of-paradise.terminal"
 PROFILE_NAME = "Birds of Paradise"
 
 # Same 16 ANSI slots and surface colours as terminal/birds-of-paradise.dconf, so a GNOME
-# Terminal and a Terminal.app window show the same thing. Roles are the tmTheme's.
+# Terminal and a Terminal.app window show the same thing. Roles are the tmTheme's where the
+# slot still holds a tmTheme colour; "custom" marks one Thomas picked by eye (2026-11-25).
 PALETTE = {
     # surface
     "BackgroundColor": "#372725",  # bg
     "TextColor": "#E6E1C4",  # fg
-    "TextBoldColor": "#E6E1C4",  # fg; BoP has no separate bold colour
-    "CursorColor": "#DDDDDD",  # cursor body
+    "TextBoldColor": "#EFB732",  # custom: warm gold
+    "CursorColor": "#A40042",  # custom: iconic magenta, same as selection
     "SelectionColor": "#A40042",  # iconic magenta
     # normal
     "ANSIBlackColor": "#1F1413",  # deepest border
@@ -43,17 +44,17 @@ PALETTE = {
     "ANSIGreenColor": "#7DAF9C",  # sage / variable
     "ANSIYellowColor": "#EFAC32",  # accent gold
     "ANSIBlueColor": "#6C99BB",  # constant
-    "ANSIMagentaColor": "#BE73FD",  # regexp special
+    "ANSIMagentaColor": "#FF9928",  # custom: amber
     "ANSICyanColor": "#86B4BB",  # xml tag
     "ANSIWhiteColor": "#E6E1C4",  # foreground cream
     # bright
     "ANSIBrightBlackColor": "#5B413D",  # muted brown
     "ANSIBrightRedColor": "#EF5D32",  # keyword orange-red
-    "ANSIBrightGreenColor": "#9CCEBA",  # sage light
-    "ANSIBrightYellowColor": "#D9D762",  # string
-    "ANSIBrightBlueColor": "#AFC4DB",  # preprocessor
-    "ANSIBrightMagentaColor": "#C699BB",  # sass values
-    "ANSIBrightCyanColor": "#A6D4DC",  # teal light
+    "ANSIBrightGreenColor": "#19E7BB",  # custom: aqua
+    "ANSIBrightYellowColor": "#3FD72C",  # custom: green
+    "ANSIBrightBlueColor": "#0000FF",  # custom: pure blue
+    "ANSIBrightMagentaColor": "#FF9930",  # custom: amber
+    "ANSIBrightCyanColor": "#C2294D",  # custom: crimson
     "ANSIBrightWhiteColor": "#F8F8F8",  # bright
 }
 

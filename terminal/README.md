@@ -29,8 +29,9 @@ The dump uses `dconf`'s INI-style serialization. Colors are stored in **16-bit p
 | Slot | Hex | Role |
 |---|---|---|
 | `background-color` | `#372725` | bg |
-| `foreground-color` / `bold-color` | `#E6E1C4` | fg / bold |
-| `cursor-background-color` | `#DDDDDD` | cursor body |
+| `foreground-color` | `#E6E1C4` | fg |
+| `bold-color` | `#EFB732` | custom: warm gold |
+| `cursor-background-color` | `#A40042` | custom: iconic magenta, same as selection |
 | `cursor-foreground-color` | `#372725` | text under cursor |
 | `highlight-background-color` | `#A40042` | iconic magenta selection |
 | `highlight-foreground-color` | `#FFF9D5` | warm white on magenta |
@@ -44,14 +45,14 @@ The dump uses `dconf`'s INI-style serialization. Colors are stored in **16-bit p
 | 2 | Green | `#7DAF9C` | sage / variable |
 | 3 | Yellow | `#EFAC32` | accent gold |
 | 4 | Blue | `#6C99BB` | constant |
-| 5 | Magenta | `#BE73FD` | regexp special |
+| 5 | Magenta | `#FF9928` | custom: amber |
 | 6 | Cyan | `#86B4BB` | xml tag |
 | 7 | White | `#E6E1C4` | foreground cream |
 | 8 | Bright Black | `#5B413D` | muted brown |
 | 9 | Bright Red | `#EF5D32` | keyword orange-red |
-| 10 | Bright Green | `#9CCEBA` | sage light |
-| 11 | Bright Yellow | `#D9D762` | string |
-| 12 | Bright Blue | `#AFC4DB` | preprocessor |
-| 13 | Bright Magenta | `#C699BB` | sass values |
-| 14 | Bright Cyan | `#A6D4DC` | teal light |
+| 10 | Bright Green | `#19E7BB` | custom: aqua |
+| 11 | Bright Yellow | `#3FD72C` | custom: green |
+| 12 | Bright Blue | `#0000FF` | custom: pure blue |
+| 13 | Bright Magenta | `#FF9930` | custom: amber |
+| 14 | Bright Cyan | `#C2294D` | custom: crimson |
 | 15 | Bright White | `#F8F8F8` | bright |
