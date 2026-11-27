@@ -68,6 +68,36 @@ QUICK_TOGGLE_OVERRIDE = """
 """
 
 
+DOCK_COMPACT_OVERRIDE = """
+
+/* BoP-Custom override: very compact bottom dock chrome.
+   Ubuntu Dock's stylesheet
+   (/usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/stylesheet.css)
+   adds 24 logical px of vertical padding around each dock icon
+   (padding-top: 10px + padding-bottom: 14px), plus a 4px margin under
+   the dash background and another 14px padding-top in fixed mode.
+   We zero those out so the dock sits flush against the icons.
+   !important is required: the extension stylesheet loads after the
+   shell theme and matches/exceeds our selector specificity. */
+#dashtodockContainer.bottom #dash .dash-item-container .app-well-app,
+#dashtodockContainer.bottom #dash .dash-item-container .show-apps,
+#dashtodockContainer.bottom #dash .dash-item-container .overview-tile {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+#dashtodockContainer.bottom #dash .dash-background {
+  margin-bottom: 0 !important;
+}
+#dashtodockContainer.bottom.fixed #dash .dash-item-container .app-well-app,
+#dashtodockContainer.bottom.fixed #dash .dash-item-container .show-apps {
+  padding-top: 0 !important;
+}
+#dashtodockContainer.bottom.fixed #dash .dash-background {
+  margin-top: 0 !important;
+}
+"""
+
+
 def transform_css(text: str) -> str:
     # Pure-gray hex (R==G==B), 6-digit
     def hex6_repl(m: re.Match) -> str:
@@ -106,7 +136,7 @@ def transform_css(text: str) -> str:
     # Pure white
     text = re.sub(r"#FFFFFF", "#FFF9D5", text, flags=re.IGNORECASE)
 
-    return text + QUICK_TOGGLE_OVERRIDE
+    return text + QUICK_TOGGLE_OVERRIDE + DOCK_COMPACT_OVERRIDE
 
 
 def main() -> int:
